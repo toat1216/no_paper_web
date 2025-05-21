@@ -5,9 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ProductsContainer = styled.div`
-  padding-top: 80px;
-`;
+const ProductsContainer = styled.div``;
 
 const Section01 = styled.section`
   height: 50vh;
@@ -153,127 +151,6 @@ const SectionContent = styled.div`
   margin: 0 auto;
   padding: 0 2rem;
   width: 100%;
-`;
-
-const SectionTitle = styled.h2`
-  font-size: 2.8rem;
-  margin-bottom: 3rem;
-  color: #333;
-  text-align: center;
-  position: relative;
-  font-weight: 700;
-
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: 4px;
-    background: linear-gradient(90deg, #007bff, #00bfff);
-    border-radius: 2px;
-  }
-`;
-
-const ProductGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
-  margin-bottom: 4rem;
-
-  @media (max-width: 1024px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
-`;
-
-const ProductCard = styled.div`
-  background: white;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  transform: translateY(50px);
-  opacity: 0;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
-
-    .image {
-      transform: scale(1.05);
-    }
-
-    .overlay {
-      background: rgba(0, 0, 0, 0.4);
-    }
-  }
-
-  .image {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-
-  .content {
-    padding: 2rem;
-  }
-
-  .title {
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: #333;
-  }
-
-  .description {
-    color: #666;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-  }
-
-  .features {
-    margin-bottom: 1.5rem;
-  }
-
-  .feature {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.8rem;
-    color: #555;
-    font-size: 1rem;
-
-    &:before {
-      content: "✓";
-      color: #007bff;
-      margin-right: 0.8rem;
-      font-weight: bold;
-    }
-  }
-
-  .button {
-    display: inline-block;
-    background: linear-gradient(45deg, #007bff, #00bfff);
-    color: white;
-    padding: 0.8rem 2rem;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
-
-    &:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3);
-    }
-  }
 `;
 
 const CtaSection = styled(Section)`

@@ -2,14 +2,10 @@ import React, { useRef, useEffect } from "react";
 import styled from "styled-components";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { NavLink } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const HomeContainer = styled.div`
-  padding-top: 80px;
-`;
+const HomeContainer = styled.div``;
 
 const Section01 = styled.section`
   height: 100vh;
@@ -175,23 +171,6 @@ const SectionTitle = styled.h2`
     height: 4px;
     background: linear-gradient(90deg, #007bff, #00bfff);
     border-radius: 2px;
-  }
-`;
-
-const FeatureCard = styled.div`
-  background: white;
-  padding: 3rem 2rem;
-  border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  transform: translateY(50px);
-  opacity: 0;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
   }
 `;
 
@@ -406,7 +385,6 @@ function Home() {
   const valueRefs = useRef([]);
   const newsRefs = useRef([]);
   const ctaRef = useRef(null);
-  const navigate = useNavigate();
 
   useEffect(() => {
     // Section01 애니메이션
@@ -576,9 +554,9 @@ function Home() {
                   <div className="date">{item.date}</div>
                   <h3 className="title">{item.title}</h3>
                   <p className="description">{item.description}</p>
-                  <a href="#" className="readMore">
+                  <button className="readMore" onClick={() => {}}>
                     자세히 보기
-                  </a>
+                  </button>
                 </div>
               </NewsCard>
             ))}
@@ -591,23 +569,15 @@ function Home() {
           <CtaContent ref={ctaRef}>
             <CtaTitle>title</CtaTitle>
             <CtaDescription>
-              description
+              최고의 기술과 서비스로 여러분의 비즈니스를 한 단계 더 발전시켜
+              드립니다.
               <br />
+              지금 바로 문의하시고 새로운 가능성을 발견해보세요.
             </CtaDescription>
-            <CtaButton>button</CtaButton>
+            <CtaButton>문의하기</CtaButton>
           </CtaContent>
         </SectionContent>
       </CtaSection>
-
-      <NavLink
-        href="/contact"
-        onClick={(e) => {
-          e.preventDefault();
-          navigate("/contact");
-        }}
-      >
-        문의하기
-      </NavLink>
     </HomeContainer>
   );
 }
