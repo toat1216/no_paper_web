@@ -5,7 +5,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ProductsContainer = styled.div``;
+const ProductsContainer = styled.div`
+  padding-top: 80px;
+`;
 
 const Section01 = styled.section`
   height: 50vh;

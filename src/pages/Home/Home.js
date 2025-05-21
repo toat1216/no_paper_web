@@ -2,10 +2,14 @@ import React, { useRef, useEffect } from "react";
 import styled from "styled-components";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const HomeContainer = styled.div``;
+const HomeContainer = styled.div`
+  padding-top: 80px;
+`;
 
 const Section01 = styled.section`
   height: 100vh;
@@ -174,21 +178,6 @@ const SectionTitle = styled.h2`
   }
 `;
 
-const FeaturesGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
-  width: 100%;
-
-  @media (max-width: 1024px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
-`;
-
 const FeatureCard = styled.div`
   background: white;
   padding: 3rem 2rem;
@@ -204,86 +193,6 @@ const FeatureCard = styled.div`
     transform: translateY(-5px);
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
   }
-`;
-
-const FeatureIcon = styled.div`
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 1.5rem;
-  background: linear-gradient(45deg, #007bff, #00bfff);
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 2rem;
-  transform: rotate(-10deg);
-  transition: transform 0.3s ease;
-
-  ${FeatureCard}:hover & {
-    transform: rotate(0deg);
-  }
-`;
-
-const FeatureTitle = styled.h3`
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #333;
-  font-weight: 600;
-`;
-
-const FeatureDescription = styled.p`
-  color: #666;
-  line-height: 1.8;
-  font-size: 1.1rem;
-`;
-
-const StatsSection = styled(Section)`
-  background: linear-gradient(45deg, #007bff, #00bfff);
-  color: white;
-`;
-
-const StatsGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  width: 100%;
-
-  @media (max-width: 1024px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 480px) {
-    grid-template-columns: 1fr;
-  }
-`;
-
-const StatCard = styled.div`
-  text-align: center;
-  padding: 2rem;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  transform: translateY(50px);
-  opacity: 0;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-
-  &:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.15);
-  }
-`;
-
-const StatNumber = styled.div`
-  font-size: 3.5rem;
-  font-weight: 800;
-  margin-bottom: 0.5rem;
-`;
-
-const StatLabel = styled.div`
-  font-size: 1.2rem;
-  opacity: 0.9;
 `;
 
 const CtaSection = styled(Section)`
@@ -497,6 +406,7 @@ function Home() {
   const valueRefs = useRef([]);
   const newsRefs = useRef([]);
   const ctaRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Section01 애니메이션
@@ -688,6 +598,16 @@ function Home() {
           </CtaContent>
         </SectionContent>
       </CtaSection>
+
+      <NavLink
+        href="/contact"
+        onClick={(e) => {
+          e.preventDefault();
+          navigate("/contact");
+        }}
+      >
+        문의하기
+      </NavLink>
     </HomeContainer>
   );
 }
