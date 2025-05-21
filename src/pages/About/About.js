@@ -67,6 +67,7 @@ const Section01Title = styled.h1`
   margin-bottom: 2rem;
   background: linear-gradient(45deg, #fff, #e0e0e0);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   font-weight: 800;
