@@ -172,11 +172,11 @@ const CtaContent = styled.div`
   opacity: 0;
 `;
 
-const CtaTitle = styled.h2`
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-  font-weight: 700;
-`;
+// const CtaTitle = styled.h2`
+//   font-size: 3rem;
+//   margin-bottom: 1.5rem;
+//   font-weight: 700;
+// `;
 
 const CtaDescription = styled.p`
   font-size: 1.3rem;
@@ -185,22 +185,22 @@ const CtaDescription = styled.p`
   line-height: 1.8;
 `;
 
-const CtaButton = styled.button`
-  background: linear-gradient(45deg, #007bff, #00bfff);
-  color: white;
-  border: none;
-  padding: 1rem 3rem;
-  font-size: 1.2rem;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+// const CtaButton = styled.button`
+//   background: linear-gradient(45deg, #007bff, #00bfff);
+//   color: white;
+//   border: none;
+//   padding: 1rem 3rem;
+//   font-size: 1.2rem;
+//   border-radius: 30px;
+//   cursor: pointer;
+//   transition: all 0.3s ease;
+//   box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
 
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
-  }
-`;
+//   &:hover {
+//     transform: translateY(-2px);
+//     box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+//   }
+// `;
 
 const ProductSection = styled(Section)`
   background: white;
@@ -314,78 +314,78 @@ const FeatureList = styled.div`
   }
 `;
 
-const TechSpecs = styled.div`
-  margin-bottom: 2rem;
+// const TechSpecs = styled.div`
+//   margin-bottom: 2rem;
 
-  h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: #333;
-  }
+//   h3 {
+//     font-size: 1.5rem;
+//     font-weight: 600;
+//     margin-bottom: 1rem;
+//     color: #333;
+//   }
 
-  .specs-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+//   .specs-grid {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     gap: 1rem;
 
-    .spec-item {
-      padding: 1rem;
-      background: #f8f9fa;
-      border-radius: 8px;
+//     .spec-item {
+//       padding: 1rem;
+//       background: #f8f9fa;
+//       border-radius: 8px;
 
-      .spec-label {
-        font-size: 0.9rem;
-        color: #666;
-        margin-bottom: 0.3rem;
-      }
+//       .spec-label {
+//         font-size: 0.9rem;
+//         color: #666;
+//         margin-bottom: 0.3rem;
+//       }
 
-      .spec-value {
-        font-size: 1.1rem;
-        font-weight: 500;
-        color: #333;
-      }
-    }
-  }
-`;
+//       .spec-value {
+//         font-size: 1.1rem;
+//         font-weight: 500;
+//         color: #333;
+//       }
+//     }
+//   }
+// `;
 
-const ActionButtons = styled.div`
-  display: flex;
-  gap: 1rem;
+// const ActionButtons = styled.div`
+//   display: flex;
+//   gap: 1rem;
 
-  .primary-button {
-    background: linear-gradient(45deg, #007bff, #00bfff);
-    color: white;
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+//   .primary-button {
+//     background: linear-gradient(45deg, #007bff, #00bfff);
+//     color: white;
+//     border: none;
+//     padding: 1rem 2rem;
+//     font-size: 1.1rem;
+//     border-radius: 30px;
+//     cursor: pointer;
+//     transition: all 0.3s ease;
+//     box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
 
-    &:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
-    }
-  }
+//     &:hover {
+//       transform: translateY(-2px);
+//       box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+//     }
+//   }
 
-  .secondary-button {
-    background: white;
-    color: #007bff;
-    border: 2px solid #007bff;
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+//   .secondary-button {
+//     background: white;
+//     color: #007bff;
+//     border: 2px solid #007bff;
+//     padding: 1rem 2rem;
+//     font-size: 1.1rem;
+//     border-radius: 30px;
+//     cursor: pointer;
+//     transition: all 0.3s ease;
 
-    &:hover {
-      background: #f8f9fa;
-      transform: translateY(-2px);
-    }
-  }
-`;
+//     &:hover {
+//       background: #f8f9fa;
+//       transform: translateY(-2px);
+//     }
+//   }
+// `;
 
 function Products() {
   const section01Ref = useRef(null);

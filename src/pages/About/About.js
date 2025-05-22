@@ -244,53 +244,53 @@ const ImageCard = styled.div`
   }
 `;
 
-const StatsSection = styled(Section)`
-  background: linear-gradient(45deg, #007bff, #00bfff);
-  color: white;
-`;
+// const StatsSection = styled(Section)`
+//   background: linear-gradient(45deg, #007bff, #00bfff);
+//   color: white;
+// `;
 
-const StatsGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  width: 100%;
+// const StatsGrid = styled.div`
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+//   gap: 2rem;
+//   width: 100%;
 
-  @media (max-width: 1024px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
+//   @media (max-width: 1024px) {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
 
-  @media (max-width: 480px) {
-    grid-template-columns: 1fr;
-  }
-`;
+//   @media (max-width: 480px) {
+//     grid-template-columns: 1fr;
+//   }
+// `;
 
-const StatCard = styled.div`
-  text-align: center;
-  padding: 2rem;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  transform: translateY(50px);
-  opacity: 0;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+// const StatCard = styled.div`
+//   text-align: center;
+//   padding: 2rem;
+//   background: rgba(255, 255, 255, 0.1);
+//   backdrop-filter: blur(10px);
+//   border-radius: 20px;
+//   transform: translateY(50px);
+//   opacity: 0;
+//   transition: all 0.3s ease;
+//   border: 1px solid rgba(255, 255, 255, 0.2);
 
-  &:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.15);
-  }
-`;
+//   &:hover {
+//     transform: translateY(-5px);
+//     background: rgba(255, 255, 255, 0.15);
+//   }
+// `;
 
-const StatNumber = styled.div`
-  font-size: 3.5rem;
-  font-weight: 800;
-  margin-bottom: 0.5rem;
-`;
+// const StatNumber = styled.div`
+//   font-size: 3.5rem;
+//   font-weight: 800;
+//   margin-bottom: 0.5rem;
+// `;
 
-const StatLabel = styled.div`
-  font-size: 1.2rem;
-  opacity: 0.9;
-`;
+// const StatLabel = styled.div`
+//   font-size: 1.2rem;
+//   opacity: 0.9;
+// `;
 
 const CtaSection = styled(Section)`
   text-align: center;
@@ -310,11 +310,11 @@ const CtaContent = styled.div`
   opacity: 0;
 `;
 
-const CtaTitle = styled.h2`
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-  font-weight: 700;
-`;
+// const CtaTitle = styled.h2`
+//   font-size: 3rem;
+//   margin-bottom: 1.5rem;
+//   font-weight: 700;
+// `;
 
 const CtaDescription = styled.p`
   font-size: 1.3rem;
@@ -323,22 +323,22 @@ const CtaDescription = styled.p`
   line-height: 1.8;
 `;
 
-const CtaButton = styled.button`
-  background: linear-gradient(45deg, #007bff, #00bfff);
-  color: white;
-  border: none;
-  padding: 1rem 3rem;
-  font-size: 1.2rem;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+// const CtaButton = styled.button`
+//   background: linear-gradient(45deg, #007bff, #00bfff);
+//   color: white;
+//   border: none;
+//   padding: 1rem 3rem;
+//   font-size: 1.2rem;
+//   border-radius: 30px;
+//   cursor: pointer;
+//   transition: all 0.3s ease;
+//   box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
 
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
-  }
-`;
+//   &:hover {
+//     transform: translateY(-2px);
+//     box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+//   }
+// `;
 
 function About() {
   const section01Ref = useRef(null);
@@ -434,12 +434,12 @@ function About() {
     },
   ];
 
-  const stats = [
-    { number: "10+", label: "stat1" },
-    { number: "500+", label: "stat2" },
-    { number: "1000+", label: "stat3" },
-    { number: "98%", label: "stat4" },
-  ];
+  // const stats = [
+  //   { number: "10+", label: "stat1" },
+  //   { number: "500+", label: "stat2" },
+  //   { number: "1000+", label: "stat3" },
+  //   { number: "98%", label: "stat4" },
+  // ];
 
   return (
     <AboutContainer>

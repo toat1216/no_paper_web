@@ -154,26 +154,26 @@ const SectionContent = styled.div`
   width: 100%;
 `;
 
-const SectionTitle = styled.h2`
-  font-size: 2.8rem;
-  margin-bottom: 3rem;
-  color: #333;
-  text-align: center;
-  position: relative;
-  font-weight: 700;
+// const SectionTitle = styled.h2`
+//   font-size: 2.8rem;
+//   margin-bottom: 3rem;
+//   color: #333;
+//   text-align: center;
+//   position: relative;
+//   font-weight: 700;
 
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: 4px;
-    background: linear-gradient(90deg, #007bff, #00bfff);
-    border-radius: 2px;
-  }
-`;
+//   &:after {
+//     content: "";
+//     position: absolute;
+//     bottom: -15px;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     width: 120px;
+//     height: 4px;
+//     background: linear-gradient(90deg, #007bff, #00bfff);
+//     border-radius: 2px;
+//   }
+// `;
 
 const CtaSection = styled(Section)`
   text-align: center;
@@ -223,162 +223,162 @@ const CtaButton = styled.button`
   }
 `;
 
-const ValuesSection = styled(Section)`
-  background: #f8f9fa;
-`;
+// const ValuesSection = styled(Section)`
+//   background: #f8f9fa;
+// `;
 
-const ValuesGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
-  margin-bottom: 4rem;
+// const ValuesGrid = styled.div`
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   gap: 3rem;
+//   margin-bottom: 4rem;
 
-  @media (max-width: 1024px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
+//   @media (max-width: 1024px) {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
 
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
-`;
+//   @media (max-width: 768px) {
+//     grid-template-columns: 1fr;
+//   }
+// `;
 
-const ValueCard = styled.div`
-  background: white;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  transform: translateY(50px);
-  opacity: 0;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+// const ValueCard = styled.div`
+//   background: white;
+//   border-radius: 20px;
+//   overflow: hidden;
+//   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+//   transform: translateY(50px);
+//   opacity: 0;
+//   transition: all 0.3s ease;
+//   border: 1px solid rgba(0, 0, 0, 0.05);
 
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+//   &:hover {
+//     transform: translateY(-5px);
+//     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 
-    .image {
-      transform: scale(1.05);
-    }
-  }
+//     .image {
+//       transform: scale(1.05);
+//     }
+//   }
 
-  .image {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
+//   .image {
+//     width: 100%;
+//     height: 300px;
+//     object-fit: cover;
+//     transition: transform 0.3s ease;
+//   }
 
-  .content {
-    padding: 2.5rem;
-    text-align: center;
-  }
+//   .content {
+//     padding: 2.5rem;
+//     text-align: center;
+//   }
 
-  .title {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: #333;
-  }
+//   .title {
+//     font-size: 2rem;
+//     font-weight: 700;
+//     margin-bottom: 1rem;
+//     color: #333;
+//   }
 
-  .description {
-    color: #666;
-    font-size: 1.1rem;
-    line-height: 1.8;
-  }
-`;
+//   .description {
+//     color: #666;
+//     font-size: 1.1rem;
+//     line-height: 1.8;
+//   }
+// `;
 
-const NewsSection = styled(Section)`
-  background: white;
-`;
+// const NewsSection = styled(Section)`
+//   background: white;
+// `;
 
-const NewsGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-bottom: 4rem;
+// const NewsGrid = styled.div`
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   gap: 2rem;
+//   margin-bottom: 4rem;
 
-  @media (max-width: 1024px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
+//   @media (max-width: 1024px) {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
 
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
-`;
+//   @media (max-width: 768px) {
+//     grid-template-columns: 1fr;
+//   }
+// `;
 
-const NewsCard = styled.div`
-  background: white;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  transform: translateY(30px);
-  opacity: 0;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+// const NewsCard = styled.div`
+//   background: white;
+//   border-radius: 15px;
+//   overflow: hidden;
+//   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+//   transform: translateY(30px);
+//   opacity: 0;
+//   transition: all 0.3s ease;
+//   border: 1px solid rgba(0, 0, 0, 0.05);
 
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+//   &:hover {
+//     transform: translateY(-5px);
+//     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 
-    .image {
-      transform: scale(1.05);
-    }
-  }
+//     .image {
+//       transform: scale(1.05);
+//     }
+//   }
 
-  .image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
+//   .image {
+//     width: 100%;
+//     height: 200px;
+//     object-fit: cover;
+//     transition: transform 0.3s ease;
+//   }
 
-  .content {
-    padding: 1.5rem;
-  }
+//   .content {
+//     padding: 1.5rem;
+//   }
 
-  .date {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 0.5rem;
-  }
+//   .date {
+//     font-size: 0.9rem;
+//     color: #666;
+//     margin-bottom: 0.5rem;
+//   }
 
-  .title {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: #333;
-    line-height: 1.4;
-  }
+//   .title {
+//     font-size: 1.3rem;
+//     font-weight: 600;
+//     margin-bottom: 1rem;
+//     color: #333;
+//     line-height: 1.4;
+//   }
 
-  .description {
-    color: #666;
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-  }
+//   .description {
+//     color: #666;
+//     font-size: 1rem;
+//     line-height: 1.6;
+//     margin-bottom: 1.5rem;
+//   }
 
-  .readMore {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: 500;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
+//   .readMore {
+//     color: #007bff;
+//     text-decoration: none;
+//     font-weight: 500;
+//     display: inline-flex;
+//     align-items: center;
+//     gap: 0.5rem;
 
-    &:hover {
-      color: #0056b3;
-    }
+//     &:hover {
+//       color: #0056b3;
+//     }
 
-    &::after {
-      content: "→";
-      transition: transform 0.3s ease;
-    }
+//     &::after {
+//       content: "→";
+//       transition: transform 0.3s ease;
+//     }
 
-    &:hover::after {
-      transform: translateX(5px);
-    }
-  }
-`;
+//     &:hover::after {
+//       transform: translateX(5px);
+//     }
+//   }
+// `;
 
 function Home() {
   const section01Ref = useRef(null);
@@ -460,50 +460,50 @@ function Home() {
     });
   }, []);
 
-  const values = [
-    {
-      title: "value1",
-      description: "description1",
-      image:
-        "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80",
-    },
-    {
-      title: "value2",
-      description: "description2",
-      image:
-        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
-    },
-    {
-      title: "value3",
-      description: "description3",
-      image:
-        "https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80",
-    },
-  ];
+  // const values = [
+  //   {
+  //     title: "value1",
+  //     description: "description1",
+  //     image:
+  //       "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80",
+  //   },
+  //   {
+  //     title: "value2",
+  //     description: "description2",
+  //     image:
+  //       "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
+  //   },
+  //   {
+  //     title: "value3",
+  //     description: "description3",
+  //     image:
+  //       "https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80",
+  //   },
+  // ];
 
-  const news = [
-    {
-      date: "2024.03.15",
-      title: "news1",
-      description: "description1",
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    },
-    {
-      date: "2024.03.10",
-      title: "news2",
-      description: "description2",
-      image:
-        "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-    },
-    {
-      date: "2024.03.05",
-      title: "news3",
-      description: "description3",
-      image:
-        "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2013&q=80",
-    },
-  ];
+  // const news = [
+  //   {
+  //     date: "2024.03.15",
+  //     title: "news1",
+  //     description: "description1",
+  //     image:
+  //       "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+  //   },
+  //   {
+  //     date: "2024.03.10",
+  //     title: "news2",
+  //     description: "description2",
+  //     image:
+  //       "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
+  //   },
+  //   {
+  //     date: "2024.03.05",
+  //     title: "news3",
+  //     description: "description3",
+  //     image:
+  //       "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2013&q=80",
+  //   },
+  // ];
 
   return (
     <HomeContainer>
