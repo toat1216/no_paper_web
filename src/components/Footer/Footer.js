@@ -48,9 +48,9 @@ function Footer() {
       <FooterContent>
         <FooterSection>
           <h3>회사 정보</h3>
-          <p>주소: 서울특별시 XX구 XX동</p>
-          <p>전화: 02-XXX-XXXX</p>
-          <p>이메일: info@company.com</p>
+          <p>주소: 용인시 수지구 만현로 67번길 19</p>
+          <p>전화: 010-3682-1146</p>
+          <p>이메일: kimmc@noppap.com</p>
         </FooterSection>
 
         <FooterSection>
@@ -68,7 +68,7 @@ function Footer() {
       </FooterContent>
 
       <Copyright>
-        <p>&copy; {new Date().getFullYear()} 회사명. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} 노페이퍼. All rights reserved.</p>
       </Copyright>
     </FooterContainer>
   );

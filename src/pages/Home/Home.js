@@ -63,7 +63,7 @@ const Section01Content = styled.div`
 `;
 
 const Section01Title = styled.h1`
-  font-size: 4.5rem;
+  font-size: 4rem;
   margin-bottom: 2rem;
   background: linear-gradient(45deg, #fff, #e0e0e0);
   -webkit-background-clip: text;
@@ -510,18 +510,18 @@ function Home() {
       <Section01 ref={section01Ref}>
         <Section01Content ref={section01ContentRef}>
           <Section01Title>
-            title
-            <br />
+            모든 실물을 <br />
+            디지털로 제공하기 위한 플랫폼
           </Section01Title>
           <Section01Subtitle>
-            description
-            <br />
+            노페이퍼의 소프트웨어 및 하드웨어를 통해 모든 것을 디지털화하기 위한
+            플랫 폼을 제공합니다.
           </Section01Subtitle>
         </Section01Content>
         <ScrollIndicator>scroll</ScrollIndicator>
       </Section01>
 
-      <ValuesSection>
+      {/* <ValuesSection>
         <SectionContent>
           <SectionTitle>value</SectionTitle>
           <ValuesGrid>
@@ -563,12 +563,12 @@ function Home() {
             ))}
           </NewsGrid>
         </SectionContent>
-      </NewsSection>
+      </NewsSection> */}
 
       <CtaSection>
         <SectionContent>
           <CtaContent ref={ctaRef}>
-            <CtaTitle>title</CtaTitle>
+            <CtaTitle>No Paper</CtaTitle>
             <CtaDescription>
               최고의 기술과 서비스로 여러분의 비즈니스를 한 단계 더 발전시켜
               드립니다.

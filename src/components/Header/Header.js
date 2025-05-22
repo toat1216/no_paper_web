@@ -97,7 +97,7 @@ function Header() {
     <HeaderContainer isScrolled={isScrolled}>
       <Nav>
         <Logo to="/" isScrolled={isScrolled}>
-          회사명
+          No Paper
         </Logo>
         <MenuButton
           onClick={() => setIsMenuOpen(!isMenuOpen)}

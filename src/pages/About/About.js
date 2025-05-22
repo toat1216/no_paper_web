@@ -299,7 +299,7 @@ const CtaSection = styled(Section)`
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: black;
+  color: white;
 `;
 
 const CtaContent = styled.div`
@@ -423,13 +423,14 @@ function About() {
   const images = [
     {
       src: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-      title: "office1",
-      description: "description1",
+      title: "소프트웨어 개발 및 솔루션 제공",
+      description: "요구사항에 맞는 소프트웨어를 개발 및 제공합니다.",
     },
     {
       src: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-      title: "office2",
-      description: "description2",
+      title: "하드웨어 및 유지보수 제공",
+      description:
+        "소프트웨어를 적용하기 위한 하드웨어 및 유지보수를 제공합니다.",
     },
   ];
 
@@ -445,20 +446,22 @@ function About() {
       <Section01 ref={section01Ref}>
         <Section01Content ref={section01ContentRef}>
           <Section01Title>
-            Title
+            회사소개
             <br />
           </Section01Title>
           <Section01Subtitle>
-            Description
-            <br />
+            일상을 디지털화하기 위한 플랫폼을 제공하는 기업으로 <br /> 고객과
+            함께 성장하는 Successful Business Partner입니다.
           </Section01Subtitle>
         </Section01Content>
-        <ScrollIndicator>ScrollIndicator</ScrollIndicator>
+        <ScrollIndicator>scroll</ScrollIndicator>
       </Section01>
 
       <Section>
         <SectionContent>
-          <SectionTitle>Title</SectionTitle>
+          <SectionTitle>
+            일상에 있는 전부를 디지털화, 주식회사 노페이퍼
+          </SectionTitle>
           <ImageGrid>
             {images.map((image, index) => (
               <ImageCard
@@ -476,7 +479,7 @@ function About() {
         </SectionContent>
       </Section>
 
-      <StatsSection>
+      {/* <StatsSection>
         <SectionContent>
           <StatsGrid>
             {stats.map((stat, index) => (
@@ -490,17 +493,17 @@ function About() {
             ))}
           </StatsGrid>
         </SectionContent>
-      </StatsSection>
+      </StatsSection> */}
 
       <CtaSection>
         <SectionContent>
           <CtaContent ref={ctaRef}>
-            <CtaTitle>Title</CtaTitle>
+            {/* <CtaTitle>No Paper</CtaTitle> */}
             <CtaDescription>
               Description
               <br />
             </CtaDescription>
-            <CtaButton>Button</CtaButton>
+            {/* <CtaButton>Button</CtaButton> */}
           </CtaContent>
         </SectionContent>
       </CtaSection>

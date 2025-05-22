@@ -446,31 +446,33 @@ function Products() {
   }, []);
 
   const product = {
-    title: "title",
-    description: "description",
+    title: "소프트웨어 및 하드웨어 솔루션",
+    description: "제품설명",
     image:
       "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
     features: [
       {
         icon: "🤖",
-        title: "title",
-        description: "description",
+        title: "전자계약시스템",
+        description:
+          "계약서 서명의 불편함과 계약서 보관의 불편함을 해결해드립니다.",
       },
       {
         icon: "📊",
-        title: "title",
-        description: "description",
+        title: "성인출입시스템",
+        description:
+          "무인 시설 출입 시 성인인증에 대한 번거로움을 위한 소프트웨어 및 하드웨어를 제공해드립니다.",
       },
-      {
-        icon: "⚡",
-        title: "title",
-        description: "description",
-      },
-      {
-        icon: "🔒",
-        title: "title",
-        description: "description",
-      },
+      // {
+      //   icon: "⚡",
+      //   title: "title",
+      //   description: "description",
+      // },
+      // {
+      //   icon: "🔒",
+      //   title: "title",
+      //   description: "description",
+      // },
     ],
     specs: [
       { label: "label", value: "value" },
@@ -485,14 +487,10 @@ function Products() {
     <ProductsContainer>
       <Section01 ref={section01Ref}>
         <Section01Content ref={section01ContentRef}>
-          <Section01Title>
-            title
-            <br />
-            subtitle
-          </Section01Title>
-          <Section01Subtitle>description</Section01Subtitle>
+          <Section01Title>No Paper</Section01Title>
+          <Section01Subtitle>Solutions</Section01Subtitle>
         </Section01Content>
-        <ScrollIndicator>button</ScrollIndicator>
+        <ScrollIndicator>scroll</ScrollIndicator>
       </Section01>
 
       <ProductSection>
@@ -524,7 +522,7 @@ function Products() {
                 ))}
               </FeatureList>
 
-              <TechSpecs>
+              {/* <TechSpecs>
                 <h3>기술 사양</h3>
                 <div className="specs-grid">
                   {product.specs.map((spec, index) => (
@@ -534,12 +532,12 @@ function Products() {
                     </div>
                   ))}
                 </div>
-              </TechSpecs>
+              </TechSpecs> */}
 
-              <ActionButtons>
+              {/* <ActionButtons>
                 <button className="primary-button">button</button>
                 <button className="secondary-button">button</button>
-              </ActionButtons>
+              </ActionButtons> */}
             </ProductInfo>
           </ProductContainer>
         </SectionContent>
@@ -548,12 +546,12 @@ function Products() {
       <CtaSection>
         <SectionContent>
           <CtaContent ref={ctaRef}>
-            <CtaTitle>title</CtaTitle>
+            {/* <CtaTitle>title</CtaTitle> */}
             <CtaDescription>
               description
               <br />
             </CtaDescription>
-            <CtaButton>button</CtaButton>
+            {/* <CtaButton>button</CtaButton> */}
           </CtaContent>
         </SectionContent>
       </CtaSection>
