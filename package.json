@@ -16,7 +16,9 @@
     "styled-components": "^6.1.18",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://noppap.com",
   "scripts": {
+    "build:docs": "react-scripts build && rm -rf docs && mv build docs",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
