@@ -54,10 +54,10 @@ function Footer() {
         </FooterSection>
 
         <FooterSection>
-          <h3>바로가기</h3>
+          {/* <h3>바로가기</h3>
           <FooterLink href="/">홈</FooterLink>
           <FooterLink href="/about">회사소개</FooterLink>
-          <FooterLink href="/products">제품소개</FooterLink>
+          <FooterLink href="/products">제품소개</FooterLink> */}
         </FooterSection>
 
         <FooterSection>
