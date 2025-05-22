@@ -65,11 +65,7 @@ const Section01Content = styled.div`
 const Section01Title = styled.h1`
   font-size: 4.5rem;
   margin-bottom: 2rem;
-  background: linear-gradient(45deg, #fff, #e0e0e0);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: white;
   font-weight: 800;
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -84,7 +80,6 @@ const Section01Subtitle = styled.p`
   color: rgba(255, 255, 255, 0.95);
   max-width: 800px;
   margin: 0 auto;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   line-height: 1.6;
   font-weight: 300;
 
@@ -500,7 +495,8 @@ function About() {
           <CtaContent ref={ctaRef}>
             {/* <CtaTitle>No Paper</CtaTitle> */}
             <CtaDescription>
-              Description
+              고객의 Digitalization 실현을 위해 <br /> 필요한 솔루션과 서비스를
+              제공하기 위해 최선을 다하겠습니다.
               <br />
             </CtaDescription>
             {/* <CtaButton>Button</CtaButton> */}

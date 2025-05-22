@@ -10,7 +10,7 @@ const ProductsContainer = styled.div``;
 const Section01 = styled.section`
   height: 50vh;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-    url("https://images.unsplash.com/photo-1581092921461-39b9d08a9b21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80");
+    url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -65,11 +65,7 @@ const Section01Content = styled.div`
 const Section01Title = styled.h1`
   font-size: 4.5rem;
   margin-bottom: 2rem;
-  background: linear-gradient(45deg, #fff, #e0e0e0);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: white;
   font-weight: 800;
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -84,7 +80,6 @@ const Section01Subtitle = styled.p`
   color: rgba(255, 255, 255, 0.95);
   max-width: 800px;
   margin: 0 auto;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   line-height: 1.6;
   font-weight: 300;
 
@@ -156,8 +151,8 @@ const SectionContent = styled.div`
 
 const CtaSection = styled(Section)`
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("https://images.unsplash.com/photo-1581092921461-39b9d08a9b21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -548,8 +543,8 @@ function Products() {
           <CtaContent ref={ctaRef}>
             {/* <CtaTitle>title</CtaTitle> */}
             <CtaDescription>
-              description
-              <br />
+              고객의 Digitalization 실현을 위해 <br /> 필요한 솔루션과 서비스를
+              제공하기 위해 최선을 다하겠습니다.
             </CtaDescription>
             {/* <CtaButton>button</CtaButton> */}
           </CtaContent>
